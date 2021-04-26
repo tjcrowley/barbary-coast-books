@@ -212,6 +212,12 @@ h1, h2, h3, h4, h5, h6 {
   .bg-image.overlay-success:before {
     background: rgba(255, 193, 7, 0.9); }
 
+@font-face {
+    font-family: 'FogCityGothic';
+    src: url("static/fonts/fogcity/FogCityGothic-Regular.otf") format("opentype");
+}
+
+
 /* Navbar */
 .site-navbar-wrap {
   position: relative;
@@ -227,7 +233,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
 
 .site-navbar {
-  font-family: FogCityGothic;
+  font-family: 'FogCityGothic';
   margin-bottom: 0px;
   width: 100%;
   padding: 15px 0; }
@@ -940,8 +946,3 @@ h1, h2, h3, h4, h5, h6 {
       background: #ccc; }
     .slide-one-item .owl-dots .owl-dot.active > span {
       background: #1C63FB; }
-
-@font-face {
-    font-family: FogCityGothic;
-    src: url("static/fonts/fogcity/FogCityGothic-Regular.otf") format("opentype");
-}
