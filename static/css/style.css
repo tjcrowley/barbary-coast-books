@@ -280,7 +280,7 @@ h1, h2, h3, h4, h5, h6 {
           -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-          font-family: 'icomoon'; }
+          font-family: 'FogCityGothic'; }
       .site-navbar .site-navigation .site-menu .has-children .dropdown {
         visibility: hidden;
         opacity: 0;
@@ -453,7 +453,7 @@ h1, h2, h3, h4, h5, h6 {
       .site-mobile-menu .site-nav-wrap .arrow-collapse:before {
         font-size: 12px;
         z-index: 20;
-        font-family: "icomoon";
+        font-family: "FogCityGothic";
         content: "\f078";
         position: absolute;
         top: 50%;
@@ -619,7 +619,7 @@ h1, h2, h3, h4, h5, h6 {
           padding-left: 0; } }
 
 .heading {
-  font-family: "Oswald", sans-serif;
+  font-family: "FogCityGothic", sans-serif;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 30px;
