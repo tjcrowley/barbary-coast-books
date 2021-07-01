@@ -97,8 +97,25 @@ var trackOutboundLink=function(t,e){var n,o="object"==typeof t?t.href:t,a=docume
                     <img src="/static/images/cover-mockup.png" alt="Image" class="img-fluid">
                 </div>
             </div>
-              <div class="mbt-book-buybuttons">
-                            <div class="mbt-book-buybutton"><a class="mbt-universal-buybutton" style="
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#buyModal">Buy Now!</button>
+
+<!-- Modal -->
+<div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="buyModalLabel">Choose Your Retailer</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+             <div class="mbt-book-buybuttons">
+                <div class="card-columns">
+                  <div class="card">
+                    <div class="mbt-book-buybutton card-header">
+                        <a class="mbt-universal-buybutton card-img" style="
                         font-family: Helvetica,sans-serif;
                         font-weight: 700;
                         color: #0f0b10 !important;
@@ -114,43 +131,63 @@ var trackOutboundLink=function(t,e){var n,o="object"==typeof t?t.href:t,a=docume
                         box-sizing: border-box;
                         line-height: 16px;
                         padding: 6px 12px;
-                        width: 200px;
-                        min-height: 30px;
+                        min-width: 110px;
+                        min-height: 40px;
                         background: linear-gradient(to bottom,#ece3c5 0%,#f8f7f2 50%,#e4dfcb 51%,#f4f1e5 100%);"
-                 href="https://www.indiebound.org/book/9781737199700"
-                 target="_blank" rel="nofollow"><img height="30px" src="https://www.indiebound.org/sites/default/files/IB-logo-header.png"> Indiebound <button>Buy Now</button></a></div>
-                  <h5>Support Independent Bookstores! We PREFER you use the above button to order from your closest bookstore. For online ordering, use one of the buttons below.</h5>
-                  <div class="mbt-book-buybutton"><a
+                        href="https://www.indiebound.org/book/9781737199700"
+                        target="_blank" rel="nofollow">
+                        <img height="75px" src="https://www.indiebound.org/sites/default/files/IB-logo-header.png"> Indiebound
+                        <button>Buy Now</button></a>
+                    </div>
+                                     <div class="card-body">
+                      <h5 class="card-title">Support Indie Booksellers!</h5>
+                      <p class="card-text">Support Independent Bookstores! We PREFER you use the above button to order from your closest bookstore. For online ordering, use one of the other buttons.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                      <div class="mbt-book-buybutton"><a
                           href="https://books.apple.com/us/book/americas-last-emperor/id1565950875?uo=8&amp;at="
-                          target="_blank" rel="nofollow"><img
+                          target="_blank" rel="nofollow"><img class="card-img"
                           src="https://www.mckeeman.net/wp-content/plugins/mybooktable/styles/golden/ibooks_button.png"
                           border="0" alt="Buy from Apple Books"></a></div>
-                  <div class="mbt-book-buybutton"><a
+                  </div>
+                           <div class="card">
+                           <div class="mbt-book-buybutton"><a
                           href="https://www.amazon.com/dp/173719970X?tag=mckeemansfnb1-20" target="_blank"
-                          rel="nofollow"><img
+                          rel="nofollow"><img class="card-img"
                           src="https://www.mckeeman.net/wp-content/plugins/mybooktable/styles/golden/amazon_button.png"
                           border="0" alt="Buy from Amazon"></a></div>
-                  <div class="mbt-book-buybutton"><a
+                  </div>
+                  <div class="card">
+                 <div class="mbt-book-buybutton"><a
                           href="https://www.amazon.com/dp/B0942VG43L?tag=mckeemansfnb1-20" target="_blank"
-                          rel="nofollow"><img
+                          rel="nofollow"><img class="card-img"
                           src="https://www.mckeeman.net/wp-content/plugins/mybooktable/styles/golden/kindle_button.png"
                           border="0" alt="Buy from Amazon Kindle"></a></div>
-                  <div class="mbt-book-buybutton"><a
+                  </div>
+                  <div class="card">
+                     <div class="mbt-book-buybutton"><a
                           href="https://www.barnesandnoble.com/w/americas-last-emperor-darren-p-mckeeman/1139402170?ean=9781737199717"
-                          target="_blank" rel="nofollow"><img
+                          target="_blank" rel="nofollow"><img class="card-img"
                           src="https://www.mckeeman.net/wp-content/plugins/mybooktable/styles/golden/nook_button.png"
                           border="0" alt="Buy from Barnes and Noble Nook"></a></div>
-                  <div class="mbt-book-buybutton"><a
+                  </div>
+                  <div class="card">
+                           <div class="card-img mbt-book-buybutton"><a
                           href="https://www.barnesandnoble.com/w/americas-last-emperor-darren-p-mckeeman/1139402170?ean=9781737199700"
-                          target="_blank" rel="nofollow"><img
+                          target="_blank" rel="nofollow"><img class="card-img"
                           src="https://www.mckeeman.net/wp-content/plugins/mybooktable/styles/golden/bnn_button.png"
                           border="0" alt="Buy from Barnes and Noble"></a></div>
-                  <div class="mbt-book-buybutton"><a
+                  </div>
+                    <div class="card">
+                         <div class="mbt-book-buybutton"><a
                           href="https://www.kobo.com/us/en/ebook/america-s-last-emperor"
-                          target="_blank" rel="nofollow"><img
+                          target="_blank" rel="nofollow"><img class="card-img"
                           src="https://www.mckeeman.net/wp-content/plugins/mybooktable/styles/golden/kobo_button.png"
                           border="0" alt="Buy from Kobo"></a></div>
-                  <div class="mbt-book-buybutton"><a class="mbt-universal-buybutton" style="
+                  </div>
+                <div class="card">
+                           <div class="mbt-book-buybutton card-img"><a class="mbt-universal-buybutton" style="
                         font-family: Helvetica,sans-serif;
                         font-weight: 700;
                         color: #0f0b10 !important;
@@ -166,18 +203,22 @@ var trackOutboundLink=function(t,e){var n,o="object"==typeof t?t.href:t,a=docume
                         box-sizing: border-box;
                         line-height: 16px;
                         padding: 6px 12px;
-                        width: 200px;
                         min-height: 30px;
                         background: linear-gradient(to bottom,#ece3c5 0%,#f8f7f2 50%,#e4dfcb 51%,#f4f1e5 100%);"
                  href="https://www.target.com/p/america-s-last-emperor-book-by-darren-p-mckeeman-paperback/-/A-83249106"
                  target="_blank" rel="nofollow"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false"><path d="M12 1c6.074 0 10.999 4.925 10.999 11 0 6.074-4.925 10.999-11 10.999-6.074 0-10.999-4.925-10.999-11C1 5.925 5.925 1 12 1zm0 18.173a7.174 7.174 0 10-.001-14.347 7.174 7.174 0 000 14.347zm0-3.653a3.52 3.52 0 110-7.04 3.52 3.52 0 010 7.04z" fill-rule="evenodd"></path></svg>
                       Target   <button>Buy Now</button></a></div>
                   <div style="clear:both;"></div>
-              </div>
-              {#              #}
-{#              <p><a data-outbound-link="1" href="https://amzn.to/3nLJOmz" class="btn btn-outline-primary px-5 py-4">Buy This Book at Amazon</a></p>#}
-{#              <p><a data-outbound-link="1" href="https://www.barnesandnoble.com/w/americas-last-emperor-darren-p-mckeeman/1139402170?ean=9781737199717" class="btn btn-outline-secondary px-5 py-4">Buy This Book at Barnes and Noble</a></p>#}
-{#              <p><a data-outbound-link="1" href="https://www.target.com/p/america-s-last-emperor-book-by-darren-p-mckeeman-paperback/-/A-83249106" class="btn btn-outline-primary px-5 py-4">Buy This Book at Target</a></p>#}
+                </div>
+                </div>
+             </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
                 <h5>Add to Goodreads: </h5>
               <div id="gr_add_to_books">
                 <div class="gr_custom_each_container_">
@@ -186,6 +227,7 @@ var trackOutboundLink=function(t,e){var n,o="object"==typeof t?t.href:t,a=docume
             </div>
   <!-- the identifier in the following script tag can be a GR book id or an isbn -->
           <script src="https://www.goodreads.com/book/add_to_books_widget_frame/173719970X?atmb_widget%5Bbutton%5D=atmb_widget_1.png"></script>
+
           </div>
         </div>
       </div>
